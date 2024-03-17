@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<HTML>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bus Booking</title>
+        <link rel="stylesheet" href="style.css"/>
+
+    </head>
+
+    <body>
+         <h1><center>Bus Booking</center></h1>
+         <br>
+         <!-- Filter by bus number -->
+         <center>
+             <label for="busno">Filter by Bus:</label>
+             <select id="bus-filter" name="bus-filter">
+                 <option value="all">All</option>
+                 <option value="bus1">Bus 1</option>
+                 <option value="bus2">Bus 2</option>
+                 <option value="bus3">Bus 3</option>
+             </select>
+         </center>
+
+         <!-- INPUT FIELDS MAIN -->
+         <form id="booking">
+             <label for="name">Name:</label>
+             <input type="text" id="name" name="name" required><br><br>
+
+             <label for="email">Email:</label>
+             <input type="email" id="email" name="email" required><br><br>
+
+             <label for="phone">Phone:</label>
+             <input type="tel" id="phone" name="phone" required><br><br>
+
+             <label for="busno">Bus Number:</label>
+             <select id="busno" name="busno">
+                 <option value="bus1">Bus 1</option>
+                 <option value="bus2">Bus 2</option>
+                 <option value="bus3">Bus 3</option>
+             </select><br><br>
+
+             <button type="submit">Book</button>
+         </form>
+         <!-- Display booked buses -->
+    <ul id="booked-buses"></ul>
+
+         <!-- Script tags -->
+        
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"></script>
+         <script src="index.js"></script>
+     </body>
+ </HTML>
